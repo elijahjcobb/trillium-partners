@@ -1,0 +1,24 @@
+/**
+ * @File   : globals.scss
+ * @Author : Elijah Cobb (elijah@elijahcobb.com)
+ * @Link   : github.com/elijahjcobb
+ * @Date   : 4/5/2022, 1:56:48 PM
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&family=Roboto+Slab:wght@300;400;700&family=Roboto:ital,wght@0,300;0,400;0,700;1,400;1,700&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	// border: solid 1px red;
+}
+
+$roboto: 'Roboto',
+sans-serif;
+$robotoSlab: 'Roboto Slab',
+serif;
+
+body {
+	font-family: $roboto;
+}
