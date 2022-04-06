@@ -40,8 +40,8 @@ export const NavBar: FC = () => {
 				justify-content: space-between;
 			}
 			.logo {
-				width: calc(90px * var(--scale));
-				padding: calc(8px * var(--scale)) 0;
+				width: calc(48px * var(--scale));
+				padding: calc(8px * var(--scale));
 			}
 			.link {
 				font-family: 'Nanum Myeongjo', serif;
@@ -73,7 +73,7 @@ export const NavBar: FC = () => {
 			}
 		`}</style>
 		<nav>
-			<Link href={"/"}><a><img className="logo" src={"/tp.png"} alt="logo" /></a></Link>
+			<Link href={"/"}><a><img className="logo" src={"/icon.svg"} alt="logo" /></a></Link>
 			<ul>
 				{links.map((url, i) => {
 					return <li key={i}><Link href={"/" + url.link}><a className="link">{url.name ?? url.link}</a></Link></li>

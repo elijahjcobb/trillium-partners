@@ -9,6 +9,7 @@ function MyApp({ Component, pageProps }: AppProps) {
 		<Head>
 			<title>The Trillium Partners</title>
 			<meta name="theme-color" content="#fff" />
+			<link rel="icon" href="/icon.svg" type="image/svg+xml" />
 		</Head>
 		<NavBar />
 		<Component {...pageProps} />
