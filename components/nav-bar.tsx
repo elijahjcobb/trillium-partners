@@ -15,7 +15,6 @@ import { link } from "fs";
 const links: { name?: string, link: string }[] = [
 	{ link: "", name: "home" },
 	{ link: "about" },
-	{ link: "team" },
 	{ link: "contact" },
 ]
 
@@ -27,7 +26,7 @@ export const NavBar: FC = () => {
 				padding: 0 calc(8px * var(--scale));
 				box-shadow: 0 0 calc(8px * var(--scale)) #eee;
 				margin-bottom: calc(8px * var(--scale));
-				z-index: 2;
+				z-index: 10;
 				position: fixed;
 				width: 100vw;
 				top: 0;
