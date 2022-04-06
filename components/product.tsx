@@ -16,23 +16,25 @@ export const Product: FC<ProductProps> = props => {
 	return (<>
 		<style jsx>{`
 			.container {
-				width: 25%;
+				width: 80%;
+				max-height: 320px;
 				display: flex;
 				flex-direction: column;
 				align-items: center;
 				justify-content: space-between;
-				margin: 32px;
-				background: #fcfcfc;
-				padding: 32px;
-				border-radius: 32px;
+				margin: 16px;
+				background: #f8f8f8;
+				padding: 16px;
+				border-radius: 16px;
 			}
 			.img {
 				width: 100%;
 				margin: auto;
+				max-height: 200px;
 			}
 			span {
 				font-weight: bold;
-				font-size: 24px;
+				font-size: 18px;
 				margin-top: 16px;
 			}
 		`}</style>

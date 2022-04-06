@@ -10,7 +10,6 @@
 import { FC } from "react";
 import { TPColor } from "./style-vars";
 import Link from "next/link";
-import { link } from "fs";
 
 const links: { name?: string, link: string }[] = [
 	{ link: "", name: "home" },
@@ -22,13 +21,12 @@ export const NavBar: FC = () => {
 	return (<>
 		<style jsx>{`
 			nav {
-				--scale: 1;
+				--scale: 0.85;
 				padding: 0 calc(8px * var(--scale));
 				box-shadow: 0 0 calc(8px * var(--scale)) #eee;
-				margin-bottom: calc(8px * var(--scale));
 				z-index: 10;
-				position: fixed;
-				width: 100vw;
+				position: sticky;
+				width: 100%;
 				top: 0;
 				background: white;
 			}
@@ -48,8 +46,9 @@ export const NavBar: FC = () => {
 			.link {
 				font-family: 'Nanum Myeongjo', serif;
 				font-weight: bold;
-				font-size: calc(0.85em + (.25em * var(--scale)));
+				font-size: calc(0.75em + (.25em * var(--scale)));
 				padding: calc(8px * var(--scale));
+				margin-left: calc(8px * var(--scale));
 				color: black;
 				text-decoration: none;
 			}
