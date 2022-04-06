@@ -56,6 +56,14 @@ export const Backdrop: FC<BackdropProps> = props => {
 				background: ${TPColor.PINK};
 				font-weight: bold;
 				font-size: 1.25em;
+				transition: 250ms ease-in-out;
+				text-decoration: none;
+				border-radius: 2px;
+			}
+			.btn:hover {
+				border-radius: 8px;
+				transform: scale(1.25) translateX(10%);
+				cursor: pointer;
 			}
 			@media (min-width: 720px) {
 				.container {
@@ -84,7 +92,9 @@ export const Backdrop: FC<BackdropProps> = props => {
 			<div className="right">
 				<img className='tp' src="tp.png" alt="home" />
 				<h1>Commercial, Investment, and Residential Real Estate Solutions</h1>
-				<span className="btn">Learn More</span>
+				<a
+					href='/about'
+					className="btn">Learn More</a>
 			</div>
 		</div>
 	</>);
