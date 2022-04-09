@@ -40,8 +40,8 @@ export const NavBar: FC = () => {
 				justify-content: space-between;
 			}
 			.logo {
-				width: calc(48px * var(--scale));
-				padding: calc(8px * var(--scale));
+				width: calc(32px * var(--scale));
+				padding: calc(4px * var(--scale));
 			}
 			.link {
 				font-family: 'Nanum Myeongjo', serif;
